@@ -1,0 +1,3 @@
+[submodule "demo/learn-terraform-modules-use"]
+	path = demo/learn-terraform-modules-use
+	url = https://github.com/hashicorp/learn-terraform-modules-use.git
