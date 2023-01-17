@@ -1,3 +1,5 @@
 demo
 demo/*
 book/*
+lab/backend/.terraform/*
+lab/eks/.terraform/*
