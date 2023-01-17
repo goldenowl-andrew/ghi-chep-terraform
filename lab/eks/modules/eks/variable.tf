@@ -21,3 +21,7 @@ variable "desired_nodes" {
 
 variable "tags" {
 }
+
+variable "public_access_cidrs" {
+  
+}
