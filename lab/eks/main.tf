@@ -1,3 +1,7 @@
+provider "aws" {
+  region = var.region
+}
+
 module "eks" {
     source = "./modules/eks"
     cluster_name = local.cluster_name
@@ -8,6 +12,7 @@ module "eks" {
     eks_userarn = local.eks_userarn
     eks_username = local.eks_username
     tags = local.common_tags
+    
 }
 
 module "vpc" {

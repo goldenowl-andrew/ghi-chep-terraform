@@ -7,7 +7,10 @@ locals {
     terraform = var.terraform
   }
 }
-
+variable "region" {
+  type = string
+  default = "us-west-2"
+}
 variable "environment" {
     default = "dev"
 }
@@ -26,8 +29,9 @@ variable "terraform" {
   default = "True"
 }
 
-variable "public_access_cidrs" {
-  type    = string
-  default = "202.134.19.195/32"
+variable public_access_cidrs {
+  type        = list(string)
+ description = "Public Subnet CIDR values for eks access"
+ default     = ["172.40.0.0/16", "202.134.19.195/32"]
 }
 
